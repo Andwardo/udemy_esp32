@@ -98,9 +98,9 @@ static void http_server_monitor(void *parameter)
 			{
 				case HTTP_MSG_WIFI_CONNECT_INIT:
 					ESP_LOGI(TAG, "HTTP_MSG_WIFI_CONNECT_INIT");
-					
+
 					g_wifi_connect_status = HTTP_WIFI_STATUS_CONNECTING;
-					break;
+					break;
 
 				case HTTP_MSG_WIFI_CONNECT_SUCCESS:
 					ESP_LOGI(TAG, "HTTP_MSG_WIFI_CONNECT_SUCCESS");
@@ -730,7 +730,6 @@ void http_server_fw_update_reset_callback(void *arg)
 	ESP_LOGI(TAG, "http_server_fw_update_reset_callback: Timer timed-out, restarting the device");
 	esp_restart();
 }
-
 
 
 
