@@ -46,6 +46,7 @@
 #include "wifi_app.h"
 
 #include "aws_iot_config.h"
+
 #include "aws_iot_log.h"
 #include "aws_iot_version.h"
 #include "aws_iot_mqtt_client_interface.h"
